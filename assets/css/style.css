@@ -6,11 +6,11 @@ body {
 }
 
 a {
-  color: #ff7f5d;
+  color: #82c424;
 }
 
 a:hover {
-  color: #ffa790;
+  color: #82c424;
   text-decoration: none;
 }
 
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #82c424;
 }
 
 .mobile-nav {
@@ -1147,6 +1147,8 @@ section {
   background: #fff;
   border-radius: 4px;
   position: relative;
+  border-bottom: 1px solid #82c424;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 }
 
 .faq .faq-list a {
@@ -1165,7 +1167,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #ffa790;
+  color: #82c424;
 }
 
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
@@ -1189,7 +1191,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #ff7f5d;
+  color: #82c424;
 }
 
 .faq .faq-list a.collapsed .icon-show {
