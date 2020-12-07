@@ -559,11 +559,11 @@ section {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
-  border: 2px solid #ff7f5d;
+  border: 2px solid #82c424;
 }
 
 .about .content .btn-learn-more:hover {
-  background: #ff7f5d;
+  background: #82c424;
   color: #fff;
   text-decoration: none;
 }
@@ -578,7 +578,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: #ff7f5d;
+  color: #82c424;
 }
 
 .counts .counters p {
