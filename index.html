@@ -448,6 +448,58 @@
 </div>
 </section>
 
+<section>
+  <div class="gtco-testimonials">
+    
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="assets/img/clients/06.jpg" alt="">
+          <div class="card-body">
+            <h5 class="text-primary">Ronne Galle <br />
+              <span> Project Manager </span></h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="assets/img/clients/05.jpg" alt="">
+          <div class="card-body">
+            <h5 class="text-warning">Missy Limana<br />
+              <span> Engineer </span></h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="assets/img/clients/04.jpg" alt="">
+          <div class="card-body">
+            <h5 class="text-danger">Martha Brown<br />
+              <span> Project Manager </span></h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="assets/img/clients/03.jpg" alt="">
+          <div class="card-body">
+            <h5 class="text-info">Hanna Lisem<br />
+              <span> Project Manager </span></h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Footer -->
 <footer id="footer">
   <svg xmlns="http://www.w3.org/2000/svg" class="light" preserveAspectRatio="none" viewBox="0 0 1070 52">
@@ -546,7 +598,41 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    
+    (function () {
+  "use strict";
+
+  var carousels = function () {
+    $(".owl-carousel1").owlCarousel({
+      loop: true,
+      center: true,
+      margin: 0,
+      responsiveClass: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        680: {
+          items: 2,
+          nav: false,
+          loop: false
+        },
+        1000: {
+          items: 3,
+          nav: true
+        }
+      }
+    });
+  };
+
+  (function ($) {
+    carousels();
+  })(jQuery);
+})();
+
+
+
   </script>
 
 </body>

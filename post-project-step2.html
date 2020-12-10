@@ -94,8 +94,10 @@
 }
 .stepwizard {
     display: table;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
+    width: 70%;
+    margin: 0 auto;
 }
 .stepwizard-step button[disabled] {
     opacity: 1 !important;
@@ -140,10 +142,35 @@
     border-radius: 15px;
     
 }
-
+.pp-form .input-group{
+  position: relative;
+}
 .pp-form .form-control:focus{
   border-color: #82C424!important;
   box-shadow: 0 0 0 0.2rem rgba(255,255,255,.15);
+}
+.pp-form .input-group span{
+    border: none rgb(130, 196, 36);
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 0px;
+    margin: 0px 25px;
+    padding: 0px !important;
+}
+
+.pp-form .pp-form-input,.pp-form-select{
+  border-radius: 20px!important;
+  padding: 10px 50px!important;
+  z-index:0 !important;
+  
+}
+.pp-form .pp-form-select{
+  padding: 0 50px!important;
+}
+.pp-form .input-group{
+  z-index:0 !important;
 }
 </style>
 
@@ -198,10 +225,10 @@
                       <a href="#step-2" type="button" class="btn step-btn-active btn-circle" disabled="disabled">2</a>
                       <p class="font-weight-bold">Step 2</p>
                     </div>
-                    <div class="stepwizard-step">
+                    <!-- <div class="stepwizard-step">
                       <a href="#step-3" type="button" class="btn step-btn btn-circle" disabled="disabled">3</a>
                       <p>Step 3</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                     
@@ -212,11 +239,11 @@
                                    <!-- Budget -->
                                    <div class="input-group col-lg-12 mb-4">
                                       <div class="input-group-prepend">
-                                          <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                          <span class="input-group-text bg-white px-4 border-md ">
                                               <i class="fas fa-rupee-sign text-muted"></i>
                                           </span>
                                       </div>
-                                      <select id="" name="jobtitle"  class="form-control custom-select bg-white border-left-0 border-md dropdown" required="" >
+                                      <select id="" name="jobtitle"  class="form-control pp-form-select custom-select bg-white  border-md dropdown" required="" >
                                           <option value="" selected>Choose your Budget</option>
                                           <option value="">5k - 10k</option>
                                           <option value="">10k - 50k</option>
@@ -229,21 +256,21 @@
                                   <!-- Deadline -->
                                   <div class="input-group col-lg-12 mb-4">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                        <span class="input-group-text bg-white px-4  ">
                                             <i class="fas fa-calendar-day text-muted"></i>
                                         </span>
                                     </div>
-                                    <input id="fullName" type="text" name="deadline" placeholder="Project Deadline (in days)" class="form-control bg-white border-left-0 border-md" required="">
+                                    <input id="fullName" type="text" name="deadline" placeholder="Project Deadline (in days)" class="form-control pp-form-input bg-white  border-md" required="">
                                 </div>
 
                                   <!-- Country -->
                                   <div class="input-group col-lg-12 mb-4">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                        <span class="input-group-text bg-white px-4 border-md ">
                                             <i class="fas fa-globe-asia text-muted"></i>
                                         </span>
                                     </div>
-                                    <select id="" name="jobtitle"  class="form-control custom-select bg-white border-left-0 border-md dropdown" required="" >
+                                    <select id="" name="jobtitle"  class="form-control pp-form-select custom-select bg-white  border-md dropdown" required="" >
                                         <option value="" selected>Choose your Country</option>
                                         <option value="in">India</option>
                                         <option value="us">USA</option>
