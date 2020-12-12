@@ -31,149 +31,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
 
 
-
-<style>
-    /*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
-
-.border-md {
-    border-width: 2px;
-}
-
-.btn-facebook {
-    background: #405D9D;
-    border: none;
-}
-
-.btn-facebook:hover, .btn-facebook:focus {
-    background: #314879;
-}
-
-.btn-twitter {
-    background: #42AEEC;
-    border: none;
-}
-
-.btn-twitter:hover, .btn-twitter:focus {
-    background: #1799e4;
-}
-
-.forget-call-us{
-  border: 1px dashed #82C424;
-    padding: 10px;
-    margin: 20px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.pp-form-card {
-    background-color: #FFF;
-    border-top:1px solid #82C424;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: auto;
-    padding: 50px 70px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 0px 10px 15px 0 rgb(0 0 0 / 20%);
-}
-
-
-/*progressbar*/
-
-.stepwizard-step p {
-    margin-top: 10px;
-}
-.stepwizard-row {
-    display: table-row;
-}
-.stepwizard {
-    display: table;
-    /* width: 100%; */
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-}
-.stepwizard-step button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
-}
-.stepwizard-row:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 3px;
-    background-color: #465064;
-    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-    background-size: 1rem 1rem;
-}
-.stepwizard-row:nth-last-child() {
-  content: none;
-}
-.stepwizard-step {
-    display: table-cell;
-    text-align: center;
-    position: relative;
-}
-.step-btn-active{
-  background-color: #82C424;
-  color:#fff;
-}
-.step-btn{
-  background-color: #ffffff;
-  color:#82C424;
-  border: 1px solid #82C424;
-}
-
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-    
-}
-.pp-form .input-group{
-  position: relative;
-}
-.pp-form .form-control:focus{
-  border-color: #82C424!important;
-  box-shadow: 0 0 0 0.2rem rgba(255,255,255,.15);
-}
-.pp-form .input-group span{
-    border: none rgb(130, 196, 36);
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    border-radius: 0px;
-    margin: 0px 25px;
-    padding: 0px !important;
-}
-
-.pp-form .pp-form-input,.pp-form-select{
-  border-radius: 20px!important;
-  padding: 10px 50px!important;
-  z-index:0 !important;
-  
-}
-.pp-form .pp-form-select{
-  padding: 0 50px!important;
-}
-.pp-form .input-group{
-  z-index:0 !important;
-}
-</style>
-
 </head>
 
 <body>
@@ -190,24 +47,24 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">ExmyB</a></li>
-          <li><a href="#">For Vendor</a></li>
-          <li><a href="#" class="exmyb-btn post-project-btn ">Post Project</a></li>
-          <li><a href="#" class="exmyb-btn login-btn ">Login</a></li>
+          <li><a href="for-vendors.html">For Vendors</a></li>
+          <li><a href="post-project.html" class="exmyb-btn post-project-btn ">Post Project</a></li>
+          <li><a href="login.html" class="exmyb-btn login-btn ">Login</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
   </header>
-  <!-- End Header -->    
+  <!-- End Header --> 
 
 
-<section class="signup">
+<section class="post-project">
     <div class="container">
         <div class="row py-5  align-items-center">
             <!-- For Demo Purpose -->
             <div class="col-md-5 pr-lg-5 mb-5 ">
                 <h2 class="py-4 font-weight-bold">Post Project</h2>
-                <img src="assets/img/project-step-2.gif" alt="" class="img-fluid mb-3 d-none d-md-block">
+                <img src="assets/img/project-step-2.gif" alt="" class="img-fluid mb-3  d-md-block">
                 
             </div>
     
@@ -286,14 +143,9 @@
                                 </div>
             
                                 
-            
-                               
-                                
-            
-
           
                                   <!-- Submit Button -->
-                                  <div class="form-group col-lg-12 mx-auto mb-0 text-center">
+                                  <div class="form-group col-lg-12 mx-auto mb-0 text-center two-btn">
                                       <!-- <a href="#" class="exmyb-btn login-btn  btn-block py-2">
                                           <span class="font-weight-bold">Create your account</span>
                                       </a> -->
@@ -316,82 +168,81 @@
 
 <!-- Footer -->
 <footer id="footer">
-    <svg xmlns="http://www.w3.org/2000/svg" class="light" preserveAspectRatio="none" viewBox="0 0 1070 52">
-      <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z"></path>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="light" preserveAspectRatio="none" viewBox="0 0 1070 52">
+    <path d="M0,0S247,91,505,32c261.17-59.72,565-13,565-13V0Z"></path>
+</svg>
 
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
 
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <a href="#"><img src="./assets/img/logo/exmyb_logo.png" alt="" class="img-fluid"></a>
-          <p>
-            National Highway - 8,  <br>
-            Ambience Island, DLF Phase 3,<br>
-            Sector 24, Gurugram, Haryana 122002  <br><br>
-            <strong>Phone:</strong> +91 9876543210<br>
-            <strong>Email:</strong> info@exmyb.com<br>
-          </p>
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <a href="index.html"><img src="./assets/img/logo/exmyb_logo_white.png" alt="" class="img-fluid"></a>
+        <p>
+          National Highway - 8,  <br>
+          Ambience Island, DLF Phase 3,<br>
+          Sector 24, Gurugram, Haryana 122002  <br><br>
+          <strong>Phone:</strong> +91 9876543210<br>
+          <strong>Email:</strong> info@exmyb.com<br>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="contact-us.html">Contact Us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="for-vendors.html">For Vendors</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="signup.html">Sign Up</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Link 3</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Link 4</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Social Networks</h4>
+        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
-          </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-6 text-lg-left text-center">
+        <div class="copyright">
+          © Copyright <strong>ExMyB</strong>. All Rights Reserved 2020
         </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Link 1</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Link 2</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Link 3</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Link 4</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Link 5</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Social Networks</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links mt-3">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          </div>
-        </div>
-
+      </div>
+      <div class="col-lg-6">
+        <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+          
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+        </nav>
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            © Copyright <strong>ExMyB</strong>. All Rights Reserved 2020
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-conditions.html">Terms & Conditions</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+</div>
+
 </footer>
+
 
   <!--  JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -410,18 +261,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<script>
-    $(function () {
-    $('input, select').on('focus', function () {
-        $(this).parent().find('.input-group-text').css('border-color', '#82C424');
-    });
-    $('input, select').on('blur', function () {
-        $(this).parent().find('.input-group-text').css('border-color', '#82C424');
-    });
-});
 
-
-</script>
 
 </body>
 

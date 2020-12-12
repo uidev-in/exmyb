@@ -240,3 +240,14 @@
     carousels();
   })(jQuery);
 })();
+
+// For Changing Form input group text on focus in Login
+$(function () {
+          
+          $('input, select').on('focus', function () {
+              $(this).parent().find('.input-group-text').css('border-color', '#82C424');
+          });
+          $('input, select').on('blur', function () {
+              $(this).parent().find('.input-group-text').css('border-color', '#82C424');
+          });
+      });
