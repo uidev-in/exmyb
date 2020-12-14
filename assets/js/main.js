@@ -205,6 +205,17 @@
     items: 1
   });
 
+  //Aos Initiate
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
+
 })(jQuery);
 
 // Client Testimonial on Home Page
@@ -251,3 +262,4 @@ $(function () {
               $(this).parent().find('.input-group-text').css('border-color', '#82C424');
           });
       });
+
