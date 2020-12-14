@@ -32,8 +32,11 @@
 
 .cntl-bar-fill {
 	background-color: #82c424;
-    background: -webkit-linear-gradient(to right, #56ab2f, #a8e063);
-    background: linear-gradient(to right, #56ab2f, #a8e063);
+    /* background: -webkit-linear-gradient(to right, #56ab2f, #a8e063);
+	background: linear-gradient(to right, #56ab2f, #a8e063); */
+/* 	background: linear-gradient(rgba(80, 80, 80, 0) 0%, #96d844 8%, #56ab2f 92%, rgba(80, 80, 80, 0) 100%);
+ */	
+	background: linear-gradient(rgba(80, 80, 80, 0) 0%, #96d844 8%, #56ab2f 100%, rgba(80, 80, 80, 0) 100%);
 	position: absolute;
 	left:0;
 	right:0;
